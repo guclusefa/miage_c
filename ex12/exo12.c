@@ -5,12 +5,13 @@
 char *tableau_rempli(char c)
 {
     // rempli un tab de 50 index avec le char du user
-    char tabl[N];
+    char *tabl = (char *)malloc(N* sizeof(char));
     int i;
     for (i = 0; i < N; i++)
     {
         tabl[i] = c;
     }
+
     return tabl;
 }
 
@@ -19,7 +20,7 @@ int main()
     char x;
     char *t;
     int j;
-    printf("quel chr dans tab?");
+    printf("quel chr dans tab? : \n");
     scanf("%c", &x);
     // t prend le tableau de la fonction
     t = tableau_rempli(x);
