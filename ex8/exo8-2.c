@@ -35,6 +35,6 @@ int suite(int n, int base)
         i++;
     }
 
-    printf("la suite pour n = %d est : %d\n", n, res);
+    printf("la suite pour n = %d et une base = %d est : %d\n", n, base, res);
     return 0;
 }
