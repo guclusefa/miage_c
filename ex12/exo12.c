@@ -2,7 +2,8 @@
 
 #define N 50
 
-char *tableau_rempli(char c){
+char *tableau_rempli(char c)
+{
     // rempli un tab de 50 index avec le char du user
     char tabl[N];
     int i;
@@ -13,7 +14,8 @@ char *tableau_rempli(char c){
     return tabl;
 }
 
-int main(){
+int main()
+{
     char x;
     char *t;
     int j;
@@ -32,4 +34,4 @@ int main(){
     return 0;
 }
 
-// non car tableau est une variable local
+// non car tableau est une variable local?
